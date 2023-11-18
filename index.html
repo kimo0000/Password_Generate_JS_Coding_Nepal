@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator JS Coding Nepal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Password Generator</h1>
+      <div class="result_input">
+        <input type="text" readonly />
+        <i class="fa-regular fa-copy"></i>
+        <div class="progress_bar"></div>
+      </div>
+      <div class="input_checkbox">
+        <div class="pass_length">
+          <span>Password Length</span>
+          <span class="length">10</span>
+        </div>
+        <input type="range" min="1" max="30" value="15" />
+      </div>
+      <p>Password Settings :</p>
+      <ul class="list_checkbox">
+        <li class="option">
+          <input type="checkbox" id="lowercase" checked />
+          <label for="lowercase">lowercase (a-z)</label>
+        </li>
+        <li class="option">
+          <input type="checkbox" id="upercase" />
+          <label for="upercase">UPERCASE (A-Z)</label>
+        </li>
+        <li class="option">
+          <input type="checkbox" id="numbers" />
+          <label for="numbers">Numbers (0-9)</label>
+        </li>
+        <li class="option">
+          <input type="checkbox" id="symbole" />
+          <label for="symbole">Symbole (!-$-^-+)</label>
+        </li>
+        <li class="option">
+          <input type="checkbox" id="exclude-duplicate" />
+          <label for="exclude-duplicate">Exclude Duplicate</label>
+        </li>
+        <li class="option">
+          <input type="checkbox" id="spaces" />
+          <label for="spaces">Includes Spaces</label>
+        </li>
+      </ul>
+      <button class="generate_password">Generate Password</button>
+    </div>
+
+    <script src="app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/d575fe1d69.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
